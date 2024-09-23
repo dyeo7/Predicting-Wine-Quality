@@ -1,4 +1,4 @@
-# Wine-Quality
+# Predicting Wine Quality with Clustering and Classification Models
 
 
 Project Title
