@@ -75,6 +75,12 @@ The confusion matrix revealed that the Random Forest model accurately identified
 
 ### XGBoost
 
+To address the class imbalance between low-quality and high-quality wines, the XGBoost model was fine-tuned using the scale_pos_weight parameter. This parameter balances the number of low-quality and high-quality wines during training. The scale_pos_weight was calculated as the ratio of low-quality wines to high-quality wines in the dataset:
+
+scale_pos_weight = low quality / high quality
+scale_pos_weight = 1382 / 217
+scale_pos_weight = 6.37
+
 The XGBoost model, while performing slightly worse than Random Forest in identifying high-quality wines (with fewer true positives), still demonstrated stronger overall performance across metrics such as accuracy and AUC score.
 
 Performance Metrics:
