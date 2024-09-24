@@ -43,6 +43,7 @@ The confusion matrix revealed that while the model correctly identified 406 low-
 
 ### Random Forest: 
 The Random Forest model was fine-tuned using GridSearchCV, and it performed best with the following results:
+
 Precision: 0.70
 
 Recall: 0.49
@@ -56,5 +57,6 @@ AUC: 0.89
 This model provided the best balance between precision and recall, indicating strong performance in predicting wine quality.
 
 ![image](https://github.com/user-attachments/assets/352824f4-2c87-4af1-ad39-55dadb2ca703)
+
 The confusion matrix revealed that the Random Forest model accurately identified 409 low-quality samples (TN) and 38 high-quality samples (TP), but it struggled with 27 high-quality samples misclassified as low-quality (FN) and 6 low-quality samples misclassified as high-quality (FP). This resulted in a precision of 0.70 and a recall of 48.7% for high-quality samples. The model achieved an F1 score of 0.57, indicating a balanced performance between precision and recall. With an overall accuracy of 90.2% and AUC score of 0.89, demonstrates that the model effectively differentiates between classes, though there is room to improve for high-quality predictions.
 
