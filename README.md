@@ -5,7 +5,7 @@
 
 # Project Overview
 
-The goal of this project is to model red wine quality based on a series of physicochemical tests, including measurements such as fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free and total sulfer dioxide, density, pH, sulphates, and alcohol content. Using these features, I aim to predict the wine's quality, scored on a scale of 0 to 10. Various machine learning techniques, including KMeans clustering, Logistic Regression, Random Forest, and XGBoost were used to explore patterns in the data and classify the wine's quality. The final XGBoost model achieved a robust AUC score of 0.94 and an accuracy of 92%, making it the best-performing model in the project.
+The goal of this project is to model red wine quality based on a series of physicochemical tests, including measurements such as fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free and total sulfer dioxide, density, pH, sulphates, and alcohol content. Using these features, I aim to predict the wine's quality, scored on a scale of 0 to 10. Various machine learning techniques, including KMeans clustering, Logistic Regression, Random Forest, and XGBoost were used to explore patterns in the data and classify the wine's quality. The final XGBoost model, despite performing worse than Random Forest in identifying high-quality wines (with fewer true positives), achieved a robust AUC score of 0.94 and an accuracy of 92%, making it the best-performing model in the project.
 
 # Business Understanding 
 
