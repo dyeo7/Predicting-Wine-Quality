@@ -94,7 +94,9 @@ False Positives (FP): 6 (low-quality wines incorrectly classified as high-qualit
 Although XGBoost had fewer true positives for high-quality wines (33 TP compared to Random Forest’s 38), it achieved higher accuracy (92%) and a better ROC AUC score (0.941), making it the best overall model in terms of general performance.
 
 Feature Importance in XGBoost Model
+
 ![image](https://github.com/user-attachments/assets/76dd0980-5dbd-4ddb-8c3a-bd17f5e89234)
+
 These feature importance values provide insights into which physicochemical properties most strongly affect the quality of wine in the dataset.
 
 
