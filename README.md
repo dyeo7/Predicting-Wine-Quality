@@ -1,7 +1,7 @@
 ## Google Advanced Data Analytics Capstone Project
 
 
-# Predicting Wine Quality with Clustering and Classification Models
+# Wine Quality Prediction Using Clustering and Machine Learning Algorithms
 
 # Project Overview
 
