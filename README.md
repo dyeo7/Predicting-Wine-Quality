@@ -30,6 +30,7 @@ Two main clusters emerged:
 Cluster 0: Mostly low-quality wines (rating 5) with moderate alcohol content (9.2% to 12.6%).
 Cluster 1: A small group of high-alcohol wines (up to 14.9%), but these still received low-quality ratings.
 The inertia score for 5 clusters was 9,816, and the silhouette score for 2 clusters was 0.21, indicating that while clustering provided insights, alcohol content was not a significant predictor of quality.
+
 ![image](https://github.com/user-attachments/assets/bfd95aaf-0af0-48a7-886e-572ec8b287ca)
 ![image](https://github.com/user-attachments/assets/4dad0a2d-8376-4a54-9c24-2c74de8db529)
 
