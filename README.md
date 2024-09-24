@@ -30,7 +30,6 @@ Cluster 0: Mostly low-quality wines (rating 5) with moderate alcohol content (9.
 Cluster 1: A small group of high-alcohol wines (up to 14.9%), but these still received low-quality ratings.
 The inertia score for 5 clusters was 9,816, and the silhouette score for 2 clusters was 0.21, indicating that while clustering provided insights, alcohol content was not a significant predictor of quality.
 ![image](https://github.com/user-attachments/assets/bfd95aaf-0af0-48a7-886e-572ec8b287ca)
-
 ![image](https://github.com/user-attachments/assets/4dad0a2d-8376-4a54-9c24-2c74de8db529)
 
 
@@ -42,13 +41,18 @@ The confusion matrix revealed that while the model correctly identified 406 low-
 A Logistic Regression model was built, achieving an accuracy of 89%. However, it struggled with recall for high-quality wines, only achieving a recall score of 35%, showing that Random Forest outperformed Logistic Regression.
 
 
-### Random Forest: The Random Forest model was fine-tuned using GridSearchCV, and it performed best with the following results:
-
+### Random Forest: 
+The Random Forest model was fine-tuned using GridSearchCV, and it performed best with the following results:
 Precision: 0.70
+
 Recall: 0.49
+
 F1 Score: 0.57
+
 Accuracy: 90.17%
+
 AUC: 0.89
+
 This model provided the best balance between precision and recall, indicating strong performance in predicting wine quality.
 
 The confusion matrix revealed that the Random Forest model accurately identified 409 low-quality samples (TN) and 38 high-quality samples (TP), but it struggled with 27 high-quality samples misclassified as low-quality (FN) and 6 low-quality samples misclassified as high-quality (FP). This resulted in a precision of 0.70 and a recall of 48.7% for high-quality samples. The model achieved an F1 score of 0.57, indicating a balanced performance between precision and recall. With an overall accuracy of 90.2% and AUC score of 0.89, demonstrates that the model effectively differentiates between classes, though there is room to improve for high-quality predictions.
