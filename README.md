@@ -35,10 +35,10 @@ The inertia score for 5 clusters was 9,816, and the silhouette score for 2 clust
 
 ### Logistic Regression:
 
-The confusion matrix revealed that while the model correctly identified 406 low-quality wines (TN) and 23 high-quality wines (TP), it also misclassified 42 high-quality wines as low-quality (FN) and 9 low-quality wines as high-quality (FP). This resulted in a recall of only 35% for high-quality wines, meaning the model struggled to detect a substantial portion of high-quality samples. Overall, Logistic Regression achieved a high accuracy but underperformed in recall for high-quality wine predictions.
-![image](https://github.com/user-attachments/assets/4ee3bfd3-a7f2-4660-9a03-31c17b7f14a3)
-
 A Logistic Regression model was built, achieving an accuracy of 89%. However, it struggled with recall for high-quality wines, only achieving a recall score of 35%, showing that Random Forest outperformed Logistic Regression.
+
+![image](https://github.com/user-attachments/assets/4ee3bfd3-a7f2-4660-9a03-31c17b7f14a3)
+The confusion matrix revealed that while the model correctly identified 406 low-quality wines (TN) and 23 high-quality wines (TP), it also misclassified 42 high-quality wines as low-quality (FN) and 9 low-quality wines as high-quality (FP). This resulted in a recall of only 35% for high-quality wines, meaning the model struggled to detect a substantial portion of high-quality samples. Overall, Logistic Regression achieved a high accuracy but underperformed in recall for high-quality wine predictions.
 
 
 ### Random Forest: 
@@ -55,6 +55,6 @@ AUC: 0.89
 
 This model provided the best balance between precision and recall, indicating strong performance in predicting wine quality.
 
-The confusion matrix revealed that the Random Forest model accurately identified 409 low-quality samples (TN) and 38 high-quality samples (TP), but it struggled with 27 high-quality samples misclassified as low-quality (FN) and 6 low-quality samples misclassified as high-quality (FP). This resulted in a precision of 0.70 and a recall of 48.7% for high-quality samples. The model achieved an F1 score of 0.57, indicating a balanced performance between precision and recall. With an overall accuracy of 90.2% and AUC score of 0.89, demonstrates that the model effectively differentiates between classes, though there is room to improve for high-quality predictions.
 ![image](https://github.com/user-attachments/assets/352824f4-2c87-4af1-ad39-55dadb2ca703)
+The confusion matrix revealed that the Random Forest model accurately identified 409 low-quality samples (TN) and 38 high-quality samples (TP), but it struggled with 27 high-quality samples misclassified as low-quality (FN) and 6 low-quality samples misclassified as high-quality (FP). This resulted in a precision of 0.70 and a recall of 48.7% for high-quality samples. The model achieved an F1 score of 0.57, indicating a balanced performance between precision and recall. With an overall accuracy of 90.2% and AUC score of 0.89, demonstrates that the model effectively differentiates between classes, though there is room to improve for high-quality predictions.
 
