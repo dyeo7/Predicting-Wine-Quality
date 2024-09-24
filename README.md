@@ -7,14 +7,14 @@
 
 The goal of this project is to model red wine quality based on a series of physicochemical tests, including measurements such as fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free and total sulfer dioxide, density, pH, sulphates, and alcohol content. Using these features, I aim to predict the wine's quality, scored on a scale of 0 to 10. Various machine learning techniques, including KMeans clustering, Logistic Regression, and Random Forest, were employed to explore patterns in the data and classify the wine's quality. The final Random Forest Model acheived a strong result with an AUC score of 0.89 and an accuracy of 90%.
 
-#Business Understanding 
+# Business Understanding 
 
 The goal is to model wine quality based on physicochemical tests (see [Cortez et al., 2009], http://www3.dsi.uminho.pt/pcortez/wine/).
 The dataset is related to red variants of the Portuguese "Vinho Verde" wine. Due to privacy and logistic issues, only physicochemical (inputs) and sensory (the output) variables are available (e.g. there is no data about grape types, wine brand, wine selling price, etc.).
 
 These datasets can be viewed as classification or regression tasks.  The classes are ordered and not balanced (e.g. there are many more normal wines than excellent or poor ones).
 
-#Data Understanding 
+# Data Understanding 
 
 The dataset consists of 1,599 samples of red wine, with the following physicochemical properties: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol content. The quality score, ranging from 0 to 10, was converted into a binary classification problem where scores of 7 or higher were considered high quality. The data was well-distributed, but alcohol content alone was not a strong predictor of wine quality.
 
@@ -22,7 +22,7 @@ The dataset consists of 1,599 samples of red wine, with the following physicoche
 
 ![image](https://github.com/user-attachments/assets/3683d248-b79d-4cd1-8488-7d4f5da2b9e5)
 
-#Modeling and Evaluation 
+# Modeling and Evaluation 
 
 Clustering: KMeans clustering was performed to explore the relationship between alcohol content and wine quality. Two main clusters emerged:
 
@@ -35,6 +35,7 @@ The inertia score for 5 clusters was 9,816, and the silhouette score for 2 clust
 
 
 Logistic Regression:
+
 The confusion matrix revealed that while the model correctly identified 406 low-quality wines (TN) and 23 high-quality wines (TP), it also misclassified 42 high-quality wines as low-quality (FN) and 9 low-quality wines as high-quality (FP). This resulted in a recall of only 35% for high-quality wines, meaning the model struggled to detect a substantial portion of high-quality samples. Overall, Logistic Regression achieved a high accuracy but underperformed in recall for high-quality wine predictions.
 ![image](https://github.com/user-attachments/assets/4ee3bfd3-a7f2-4660-9a03-31c17b7f14a3)
 
