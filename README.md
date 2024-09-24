@@ -16,7 +16,7 @@ These datasets can be viewed as classification or regression tasks.  The classes
 
 # Data Understanding 
 
-The dataset consists of 1,599 samples of red wine, with the following physicochemical properties: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol content. The quality score, ranging from 0 to 10, was converted into a binary classification problem where scores of 7 or higher were considered high quality. The data was well-distributed, but alcohol content alone was not a strong predictor of wine quality.
+The dataset consists of 1,599 samples of red wine, with the following physicochemical properties: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol content. The quality score, ranging from 0 to 10, was converted into a binary classification problem where scores of 7 or higher were considered high quality. The dataset was inherently imbalanced from the start, with a majority of the wines (1,382) classified as low quality and only 217 as high quality. This imbalance poses a significant challenge, as the model may naturally favor the majority class.
 
 ![image](https://github.com/user-attachments/assets/d56e644f-afe8-4dbe-b72e-514fc5ccbfb2)
 
@@ -42,7 +42,10 @@ The confusion matrix revealed that while the model correctly identified 406 low-
 
 
 ### Random Forest: 
-The Random Forest model was fine-tuned using GridSearchCV, and it performed best with the following results:
+The Random Forest model was fine-tuned using GridSearchCV to address the inherent class imbalance and optimize hyperparameters such as max_depth, max_features, and n_estimators. The best model configuration significantly improved performance:
+
+Before Tuning: The model struggled with the imbalanced classes, favoring the majority low-quality wines.
+After Tuning: The optimized model achieved an AUC score of 0.89 and an accuracy of 90.2%, demonstrating improved generalization and sensitivity to high-quality wines. 
 
 Precision: 0.70
 
