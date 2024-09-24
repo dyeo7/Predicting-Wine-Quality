@@ -24,7 +24,7 @@ The dataset consists of 1,599 samples of red wine, with the following physicoche
 
 # Modeling and Evaluation 
 
-Clustering: KMeans clustering was performed to explore the relationship between alcohol content and wine quality. Two main clusters emerged:
+### Clustering: KMeans clustering was performed to explore the relationship between alcohol content and wine quality. Two main clusters emerged:
 
 Cluster 0: Mostly low-quality wines (rating 5) with moderate alcohol content (9.2% to 12.6%).
 Cluster 1: A small group of high-alcohol wines (up to 14.9%), but these still received low-quality ratings.
@@ -34,7 +34,7 @@ The inertia score for 5 clusters was 9,816, and the silhouette score for 2 clust
 ![image](https://github.com/user-attachments/assets/4dad0a2d-8376-4a54-9c24-2c74de8db529)
 
 
-Logistic Regression:
+### Logistic Regression:
 
 The confusion matrix revealed that while the model correctly identified 406 low-quality wines (TN) and 23 high-quality wines (TP), it also misclassified 42 high-quality wines as low-quality (FN) and 9 low-quality wines as high-quality (FP). This resulted in a recall of only 35% for high-quality wines, meaning the model struggled to detect a substantial portion of high-quality samples. Overall, Logistic Regression achieved a high accuracy but underperformed in recall for high-quality wine predictions.
 ![image](https://github.com/user-attachments/assets/4ee3bfd3-a7f2-4660-9a03-31c17b7f14a3)
@@ -42,7 +42,7 @@ The confusion matrix revealed that while the model correctly identified 406 low-
 A Logistic Regression model was built, achieving an accuracy of 89%. However, it struggled with recall for high-quality wines, only achieving a recall score of 35%, showing that Random Forest outperformed Logistic Regression.
 
 
-Random Forest: The Random Forest model was fine-tuned using GridSearchCV, and it performed best with the following results:
+### Random Forest: The Random Forest model was fine-tuned using GridSearchCV, and it performed best with the following results:
 
 Precision: 0.70
 Recall: 0.49
